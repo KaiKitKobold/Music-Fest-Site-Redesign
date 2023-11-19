@@ -52,16 +52,59 @@
         </div>
       </header>
     <main>
-        <hero>
+        <section class="hero">
             <div class="wrapper-width">
-                <h1>vancouver island musicfest 2024 weekend passes</h1>
-                <p>Comox Valley Exhibition Grounds July 12, 2024 - July 14, 2024</p>
+                <!--<h1><strong>Warning! This site is an student mock-up, and this ticket section is intended 
+                  for educational purposes, as a way for the student to learn html. do not put any 
+                  sensitive information in the form, if you do it will be deleted by the student
+                  and you will be notifed of it's deletion, however
+                  the information may be succeptiable to outside forces, such as phising./strong></h1>-->
+                <h2>vancouver island musicfest 2024 weekend passes</h2>
+                <p>comox valley exhibition grounds july 12, 2024 - july 14, 2024</p>
                 <a href="#music-fest-information">details</a>
-                <div class="ticket-form">
-                    
-                </div>
             </div>
-        </hero>
+        </section>
+        <section class="ticket-form">
+          <div class="wrapper-width">
+            <img src="images/tickets/tickets_price.png" alt="ticket prices for musicfest.">
+            <!--<h3>This is test to email an short test message to whoever inputs inside this form, please 
+              use an throwAway email, or an email generator when submitting with this form.</h3> -->
+            <form action="mailto:info@example.com" method="get">
+              <label for="email" id="email" name="email" placeholder="Ex: Bob@gmail.com">send message to your email:</label>
+              <input type="text" placeholder="put message here" name="email">
+              <button type="submit">Submit</button>
+
+            </form>
+            <p>ticket prices:</p>
+            <form method="post" action="ticket-form.php">
+              <label for="pepoleammo">ammount your'e expecting to bring for (campsite.)</label>
+              <input type="text" id="pepoleammo" name="pepoleammount" placeholder="Ex: 1-6">
+
+              <label for="pepolename">what are the name of the pepole your bringing? (seperated by commas)</label>
+              <input type="text" id="pepolename" name ="pepoleName" placeholder="Ex: Mike smith, Allsia Bryce etc.">
+            
+              <label for="email">Email<span class="label-required"></span>* (required)</label>
+              <input type="email" placeholder="Ex: Kolin@hotmail.com" required>
+              <fieldset>
+                <legend>choose your weekend pass:</legend>
+                  <input type="radio" id="adult-weekend-pass" name="weekend-pass" value="adult weekend pass">
+                  <label for="adult-weekend-pass">$215.00 Adult Weekend Pass: </label><br>
+                  <input type="radio" id="senior-weekend-pass" name="weekend-pass" value="senior weekend pass">
+                  <label for="senior-weekend-pass">(65+) $205.00 Senior Weekend Pass: </label><br>
+                  <input type="radio" id="youth-weekend-pass" name="weekend-pass" value="youth weekend pass">
+                  <label for="youth-weekend-pass">(13-18) $125.00 Youth Weekend Pass: </label><br>
+                  <input type="radio" id="child-weekend-pass" name="weekend-pass" value="child weekend pass">
+                  <label for="child-weekend-pass">(0-12) $0.00 Child Weekend Pass: </label><br>
+              </fieldset>
+              <p>July 12,13 & 14th<br>COMOX VALLEY EXHIBITION GROUNDS<br>4839 Headquarters Rd, Courtenay BC<br>
+                NO REFUNDS OR EXCHANGES<br>GATES BEGIN: FRIDAY JULY 12th 3:00 pm GATES CLOSE AT 11:00pm NIGHTLY</p>
+              <div class="wrapper-button">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </section>
     </main>
     <footer>
         <div class="wrapper-width">
