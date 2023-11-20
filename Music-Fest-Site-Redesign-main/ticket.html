@@ -64,17 +64,11 @@
                 <a href="#music-fest-information">details</a>
             </div>
         </section>
-        <section class="ticket-form">
+        <div class="ticket-form">
           <div class="wrapper-width">
             <img src="images/tickets/tickets_price.png" alt="ticket prices for musicfest.">
             <!--<h3>This is test to email an short test message to whoever inputs inside this form, please 
               use an throwAway email, or an email generator when submitting with this form.</h3> -->
-            <form action="mailto:info@example.com" method="get">
-              <label for="email" id="email" name="email" placeholder="Ex: Bob@gmail.com">send message to your email:</label>
-              <input type="text" placeholder="put message here" name="email">
-              <button type="submit">Submit</button>
-
-            </form>
             <p>ticket prices:</p>
             <form method="post" action="ticket-form.php">
               <label for="pepoleammo">ammount your'e expecting to bring for (campsite.)</label>
@@ -84,7 +78,7 @@
               <input type="text" id="pepolename" name ="pepoleName" placeholder="Ex: Mike smith, Allsia Bryce etc.">
             
               <label for="email">Email<span class="label-required"></span>* (required)</label>
-              <input type="email" name ="email" placeholder="Ex: Kolin@hotmail.com" required>
+              <input type="email" id="email" name="email" placeholder="Ex: Kolin@hotmail.com" required>
               <fieldset>
                 <legend>choose your weekend pass:</legend>
                   <input type="radio" id="adult-weekend-pass" name="weekendpass" value="adult weekend pass">
@@ -107,7 +101,7 @@
               </div>
             </form>
           </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="wrapper-width">
