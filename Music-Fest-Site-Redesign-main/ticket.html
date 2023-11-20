@@ -76,7 +76,7 @@
 
             </form>
             <p>ticket prices:</p>
-            <form method="post" action="ticket-form.php">
+            <form method="get" action="ticket-form.php">
               <label for="pepoleammo">ammount your'e expecting to bring for (campsite.)</label>
               <input type="text" id="pepoleammo" name="pepoleammount" placeholder="Ex: 1-6">
 
@@ -84,18 +84,21 @@
               <input type="text" id="pepolename" name ="pepoleName" placeholder="Ex: Mike smith, Allsia Bryce etc.">
             
               <label for="email">Email<span class="label-required"></span>* (required)</label>
-              <input type="email" placeholder="Ex: Kolin@hotmail.com" required>
+              <input type="email" name ="email" placeholder="Ex: Kolin@hotmail.com" required>
               <fieldset>
                 <legend>choose your weekend pass:</legend>
-                  <input type="radio" id="adult-weekend-pass" name="weekend-pass" value="adult weekend pass">
+                  <input type="radio" id="adult-weekend-pass" name="weekendpass" value="adult weekend pass">
                   <label for="adult-weekend-pass">$215.00 Adult Weekend Pass: </label><br>
-                  <input type="radio" id="senior-weekend-pass" name="weekend-pass" value="senior weekend pass">
+                  <input type="radio" id="senior-weekend-pass" name="weekendpass" value="senior weekend pass">
                   <label for="senior-weekend-pass">(65+) $205.00 Senior Weekend Pass: </label><br>
-                  <input type="radio" id="youth-weekend-pass" name="weekend-pass" value="youth weekend pass">
+                  <input type="radio" id="youth-weekend-pass" name="weekendpass" value="youth weekend pass">
                   <label for="youth-weekend-pass">(13-18) $125.00 Youth Weekend Pass: </label><br>
-                  <input type="radio" id="child-weekend-pass" name="weekend-pass" value="child weekend pass">
+                  <input type="radio" id="child-weekend-pass" name="weekendpass" value="child weekend pass">
                   <label for="child-weekend-pass">(0-12) $0.00 Child Weekend Pass: </label><br>
               </fieldset>
+              <label for="message">accommodations<span class="label-optional">* (optional)</span></label>
+              <textarea id="message" name="message" placeholder="please tell us your pottential accommodations">
+                </textarea>
               <p>July 12,13 & 14th<br>COMOX VALLEY EXHIBITION GROUNDS<br>4839 Headquarters Rd, Courtenay BC<br>
                 NO REFUNDS OR EXCHANGES<br>GATES BEGIN: FRIDAY JULY 12th 3:00 pm GATES CLOSE AT 11:00pm NIGHTLY</p>
               <div class="wrapper-button">
