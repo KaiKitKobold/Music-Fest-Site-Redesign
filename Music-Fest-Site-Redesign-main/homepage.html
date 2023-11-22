@@ -12,59 +12,74 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&family=Oxygen:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/1770e3852a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="wrapper-width">
         <nav>
-          <div class="header-links">
-            <a href="homepage.html">home</a>
-            <button type="button">performers</button>
-            <div class="dropdown-options">
-              <a href="2023-performers.html">2023 performers</a>
-              <a href="apply-to-peform.html">apply to perform</a>
-              <a href="past-performances.html">past performances</a>
-            </div>
-            <button type="button">information</button>
-            <div class="dropdown-options">
-              <a href="about-us.html">about us</a>
-              <a href="audience-information.html">audience information</a>
-              <a href="camping.html">camping</a>
-              <a href="comox-valley-folk-society.html"
-                >comox valley folk socitey</a
-              >
-              <a href="contact-us.html">contact us</a>
-              <a href="faq.html">FAQ</a>
-              <a href="important-fire-information.html"
-                >important fire information</a
-              >
-              <a href="the-stages-at-musicfest.html">the stages at musicfest</a>
-            </div>
-            <button type="button">get involved</button>
-            <div class="dropdown-options">
-              <a href="become-a-sponser.html">become a sponser</a>
-              <a href="vendors.html">vendors</a>
-              <a href="volunteer.html">volunteer</a>
-            </div>
-            <a href="sponsers.html">sponsers</a>
-            <a href="festival-acess.html">festival acess</a>
-            <a href="schedules.html">schedules</a>
-            <a href="musicfest-playlist"></a>
+          <i onclick="showHide()" class="fa-solid fa-bars"></i>
+          <div id="nav-items">
+            <ul class="header-links">
+              <li><a href="homepage.html">home</a></li>
+              <li class="dropdown">
+                <a href="2023-performers.html">performers</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul onmouseover="dropdownPerformers()" class="dropdown-options">
+                  <li id="dropdown1" class="dropdown-content">
+                    <li><a href="apply-to-peform.html">apply to perform</a></li>
+                    <li><a href="past-performances.html">past performances</a></li>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="audience-information.html">audience information</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul onmouseover="dropdownAudience()" class="dropdown-options">
+                  <li id="dropdown2" class="dropdown-content">
+                    <li><a href="about-us.html">about us</a></li>
+                    <li><a href="camping.html">camping</a></li>
+                    <li><a href="comox-valley-folk-society.html">comox valley folk society</a></li>
+                    <li><a href="contact-us.html">contact us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="important-fire-information.html">important fire information</a></li>
+                    <li><a href="the-stages-at-musicfest.html">the stages at musicfest</a></li>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="get-involved.html">get involved</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul onmouseover="dropdownInvolved()" class="dropdown-options">
+                  <li id="dropdown3" class="dropdown-content">
+                    <li><a href="become-a-sponser.html">become a sponser</a></li>
+                    <li><a href="vendors.html">vendors</a></li>
+                    <li><a href="volunteer.html">volunteer</a></li>
+                    <li><a href="sponsers.html">sponsers</a></li>
+                    <li><a href="festival-acess.html">festival acess</a></li>
+                    <li><a href="schedules.html">schedules</a></li>
+                    <li><a href="musicfest-playlist">music fest playlist</a></li>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="ticket.html">tickets</a></li>
+            </ul>
           </div>
+        </nav>
           <div class="header-logo">
             <a href="homepage.html"></a>
             <img
               src="images/Header/vancouver-island-music-fest-logo.png"
               alt="vancouver island's music fest logo"
-            />
+              />
           </div>
-        </nav>
-      </div>
+        </div>
+      
     </header>
     <main>
       <section class="hero">
         <div class="wrapper-width">
-          <h2>the next festival is: july 12 - 14, 2024</h2>
+          <h2>our next festival is: july 12 - 14, 2024</h2>
           <!-- Update image if the 2024 music fest is over, or if needed to promote something, such as the december tickets. -->
           <img
             src="images/Home/festival-crowd.jpg"
@@ -281,5 +296,7 @@
         </section>
       </div>
     </footer>
+    <script src="global-javascript.js">
+    </script>
   </body>
 </html>
